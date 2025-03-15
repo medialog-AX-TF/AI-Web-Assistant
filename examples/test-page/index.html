@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U+ 메시지허브 - 프로젝트 목록</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-left">
+            <h1 class="logo">U<sup>+</sup> 메시지허브</h1>
+            <nav class="main-nav">
+                <a href="#" class="active">관리자 콘솔</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            <a href="#" class="header-link">새로가기</a>
+            <a href="#" class="header-link">이용 가이드</a>
+            <a href="mailto:choipro@medialog.co.kr" class="header-email">choipro@medialog.co.kr</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="side-nav">
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="icon">📊</i>
+                        대시보드
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="icon">👤</i>
+                        사용자
+                    </a>
+                </div>
+                <div class="nav-item active">
+                    <a href="#" class="nav-link">
+                        <i class="icon">📂</i>
+                        프로젝트
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="icon">🔄</i>
+                        발신제한
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="icon">📱</i>
+                        Agent 연동
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="icon">📊</i>
+                        이용현황
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="icon">⚙️</i>
+                        정산
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="icon">📈</i>
+                        통계
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="icon">⚠️</i>
+                        알림
+                    </a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-header">
+                <h2 class="content-title">프로젝트 > 프로젝트 목록</h2>
+            </div>
+
+            <div class="content-body">
+                <div class="notice-box">
+                    <ul>
+                        <li>프로젝트 정보를 통해 서비스를 관리할 수 있습니다.</li>
+                        <li>주요 프로젝트 그리고 주말 사용 중인 프로젝트를 상단에 고정할 수 있습니다. (최신 작성된 순 1~3일 소요됩니다.)</li>
+                    </ul>
+                </div>
+
+                <div class="search-box">
+                    <div class="search-group">
+                        <label>프로젝트 명</label>
+                        <input type="text" placeholder="프로젝트명을 입력하세요">
+                    </div>
+                    <div class="search-group">
+                        <label>프로젝트 상태</label>
+                        <select>
+                            <option>전체</option>
+                        </select>
+                    </div>
+                    <button class="btn-search">검색</button>
+                </div>
+
+                <div class="table-container">
+                    <div class="table-header">
+                        <button class="btn-primary">프로젝트 생성</button>
+                    </div>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>프로젝트명</th>
+                                <th>프로젝트ID</th>
+                                <th>프로젝트 상태</th>
+                                <th>이용 서비스</th>
+                                <th>생성일</th>
+                                <th>멤버</th>
+                                <th>최종접속일</th>
+                                <th>관리</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>구독형LMS문자발송</td>
+                                <td>PJTKBHB</td>
+                                <td>정상</td>
+                                <td>문자,RCS</td>
+                                <td>2023-11-22</td>
+                                <td>3</td>
+                                <td>2023-11-22</td>
+                                <td>
+                                    <button class="btn-action">상세</button>
+                                    <button class="btn-action">수정</button>
+                                    <button class="btn-action">삭제</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>우리은행</td>
+                                <td>PJTVYLc</td>
+                                <td>정상</td>
+                                <td>문자,RCS,KAKAO</td>
+                                <td>2023-11-12</td>
+                                <td>3</td>
+                                <td>2023-11-12</td>
+                                <td>
+                                    <button class="btn-action">상세</button>
+                                    <button class="btn-action">수정</button>
+                                    <button class="btn-action">삭제</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>RCS 템플릿</td>
+                                <td>PJTaLBk</td>
+                                <td>정상</td>
+                                <td>문자,RCS,KAKAO</td>
+                                <td>2023-09-18</td>
+                                <td>3</td>
+                                <td>2023-09-18</td>
+                                <td>
+                                    <button class="btn-action">상세</button>
+                                    <button class="btn-action">수정</button>
+                                    <button class="btn-action">삭제</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>메시지 허브 템플릿</td>
+                                <td>PJTCaJBKDS</td>
+                                <td>정상</td>
+                                <td>문자,RCS,KAKAO,PUSH</td>
+                                <td>2022-03-03</td>
+                                <td>3</td>
+                                <td>2022-03-03</td>
+                                <td>
+                                    <button class="btn-action">상세</button>
+                                    <button class="btn-action">수정</button>
+                                    <button class="btn-action">삭제</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>demo service</td>
+                                <td>PJTZSUoSf</td>
+                                <td>정상</td>
+                                <td>문자,RCS,KAKAO,국제문자</td>
+                                <td>2021-10-25</td>
+                                <td>10</td>
+                                <td>2021-10-25</td>
+                                <td>
+                                    <button class="btn-action">상세</button>
+                                    <button class="btn-action">수정</button>
+                                    <button class="btn-action">삭제</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="ai-assistant.js"></script>
+</body>
+</html> 
