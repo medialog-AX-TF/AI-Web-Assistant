@@ -1,0 +1,282 @@
+/* 전역 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f5f6f8;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* 헤더 스타일 */
+.main-header {
+    background-color: #0e0e1a;
+    color: white;
+    padding: 0 20px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo sup {
+    font-size: 12px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.main-nav a.active {
+    color: #ff0066;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-link {
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.header-email {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* 컨테이너 레이아웃 */
+.container {
+    display: flex;
+    min-height: calc(100vh - 60px);
+}
+
+/* 사이드바 스타일 */
+.sidebar {
+    width: 240px;
+    background-color: white;
+    border-right: 1px solid #eee;
+    padding: 20px 0;
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    padding: 0 20px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    color: #666;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 2px 0;
+}
+
+.nav-item.active .nav-link {
+    background-color: #f0f0f5;
+    color: #ff0066;
+}
+
+.icon {
+    font-size: 18px;
+}
+
+/* 메인 콘텐츠 스타일 */
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.content-header {
+    margin-bottom: 20px;
+}
+
+.content-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+/* 알림 박스 스타일 */
+.notice-box {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.notice-box ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.notice-box li {
+    position: relative;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.notice-box li:before {
+    content: "•";
+    position: absolute;
+    left: -15px;
+    color: #999;
+}
+
+/* 검색 박스 스타일 */
+.search-box {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.search-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.search-group label {
+    font-size: 14px;
+    color: #666;
+}
+
+.search-group input,
+.search-group select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    min-width: 200px;
+}
+
+.btn-search {
+    background-color: #ff0066;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* 테이블 스타일 */
+.table-container {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table-header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.btn-primary {
+    background-color: #ff0066;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.data-table th {
+    background-color: #f8f9fa;
+    font-weight: 500;
+    color: #666;
+}
+
+.data-table tr:last-child td {
+    border-bottom: none;
+}
+
+.btn-action {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #666;
+    cursor: pointer;
+    margin-right: 4px;
+    font-size: 12px;
+}
+
+.btn-action:hover {
+    background-color: #f8f9fa;
+}
+
+/* AI 웹 어시스턴트 스타일 오버라이드 */
+.ai-assistant-container {
+    z-index: 10000;
+}
+
+.ai-assistant-toggle {
+    background-color: #ff0066 !important;
+}
+
+.ai-assistant-toggle:hover {
+    background-color: #e6005c !important;
+}
+
+.ai-assistant-message.user {
+    background-color: #ff0066 !important;
+}
+
+.ai-assistant-send {
+    color: #ff0066 !important;
+}
+
+.ai-assistant-send:hover {
+    color: #e6005c !important;
+} 
