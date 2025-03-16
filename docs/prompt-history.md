@@ -44,12 +44,9 @@ AI 웹 어시스턴트에서 활용하는 툴
 AI 웹 어시스턴트는 다음과 같은 툴을 활용하여 자동화 작업을 수행합니다.
 
 Tool Name	설명	입력값	출력값
-codebase_search	코드베이스에서 특정 기능 검색	query (검색어)	코드 스니펫
-run_terminal_cmd	시스템 명령 실행	command (명령어)	실행 결과
-list_dir	웹사이트 파일 리스트 검색	relative_workspace_path (디렉토리 경로)	파일 목록
-grep_search	특정 텍스트 검색	query (검색어)	검색된 결과
-edit_file	웹사이트의 설정 파일 수정	target_file, code_edit	파일 수정 결과
-web_search	최신 정보 검색	search_term (검색어)	검색 결과
+site_search	웹사이트의 주요 메뉴와 기능 검색	query (검색어)	코드 스니펫
+dom_search 	웹사이트의 Dom 검색 및 목록
+do_action   웹사이트의 특정 액션 수행 
 
 웹사이트 내 AI 웹 어시스턴트 동작 방식
 주요 기능
